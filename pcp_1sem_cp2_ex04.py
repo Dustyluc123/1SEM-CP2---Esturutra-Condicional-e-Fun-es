@@ -1,4 +1,4 @@
-#Questão 4
+
 
 nome = input("Digite o nome do funcionário: ")
 
@@ -43,8 +43,8 @@ def calc_hrs_extras(horas_extras, sálario_bruto):
   h_ext = (horas_extras * (sálario_bruto * 0.015))
   return h_ext
 
-def calc_faltas(faltas_mensais, salario_bruto):
-  falta = (salario_bruto * 0.02) * faltas_mensais
+def calc_faltas(faltas_mensais, sálario_bruto):
+  falta = (sálario_bruto * 0.02) * faltas_mensais
   return falta
 
 def calc_bônus(recebeu_bonus, bonus_cargo):
@@ -55,20 +55,20 @@ extras_horas = calc_hrs_extras(hrs_extras, sálario_b)
 flts = calc_faltas(faltas, sálario_b)
 extras_bônus = calc_bônus(bônus, bns)
 
-def calc_extras(horas_ext, bonus_f):
-  ext = horas_ext + bonus_f
+def calc_extras(calc_horas_extras, calc_bonus):
+  ext = calc_horas_extras + calc_bonus
   return ext
 
 extras = calc_extras(extras_horas, extras_bônus)
 
-def calc_sálario_acrésimo(sálario_brt, extras_final):
-  sálario_acrescimo = sálario_brt + extras_final
-  return sálario_acrescimo
+def calc_sálario_acrésimo(sálario_bruto, extras_final):
+  sálario_acréscimo = sálario_bruto + extras_final
+  return sálario_acréscimo
 
 sálario_a = calc_sálario_acrésimo(sálario_b, extras)
 
-def calc_sálario_final(sálario_acrescimo, falta_final):
-  sálario_final = sálario_acrescimo - falta_final
+def calc_sálario_final(sálario_acréscimo, falta_final):
+  sálario_final = sálario_acréscimo - falta_final
   return sálario_final
 
 sálario_f = calc_sálario_final(sálario_a, flts)

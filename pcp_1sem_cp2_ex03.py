@@ -1,4 +1,3 @@
-#Questão 3
 
 cp1 = float(input("Digite a nota do primeiro Checkpoint: "))
 while cp1 > 10 or cp1 < 0:
@@ -25,4 +24,16 @@ gs = float(input("Digite a nota da Global Solution: "))
 while gs > 10 or gs < 0:
   gs = float(input("Digite uma nota válida para a Global Solution (Um número entre 0 e 10): "))
 
-print(f'\nNota do primeiro Checkpoint: {cp1}\nNota do segundo Checkpoint: {cp2}\nNota do terceiro Checkpoint: {cp3}\nNota da primeira Sprint: {sp1}\nNota da segunda Sprint: {sp2}\nNota da Global Solution: {gs}')
+if cp1 <= cp2 and cp1 <= cp3:
+  cp_nota = cp1
+elif cp2 <= cp1 and cp2 <= cp3:
+  cp_nota = cp2
+elif cp3 <= cp1 and cp3 <= cp2:
+  cp_nota = cp3
+
+
+média_1 = (((cp1 + cp2 + cp3 - cp_nota + sp1 + sp2) / 4) *0.4) + gs * 0.6
+print(f'\nA Nota do aluno no primeiro Semestre é: {média_1:.1f}')
+
+média_1_ps = média_1 * 0.4
+print(f'A Nota do aluno no primeiro Semestre com peso é: {média_1_ps:.1f}')

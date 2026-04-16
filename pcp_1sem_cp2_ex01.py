@@ -1,6 +1,6 @@
-#Questão 1:
 
-cod_est = int(input("Digite o código do estado de origem da carga do caminhão: "))
+
+cod_est = int(input("Digite o código do estado de origem da carga do caminhão (1 até 5): "))
 
 while 1 > cod_est or cod_est > 5:
    cod_est = int(input("Digite um número inteiro compatível (1 até 5): "))
@@ -10,14 +10,14 @@ carga_peso = float(input("Digite o peso da carga do caminhão em toneladas: "))
 while carga_peso <= 0:
   carga_peso = float(input("Digite o peso da carga do caminhão em toneladas (Um número maior que 0): "))
 
-cod_carga = int(input("Digite o código da carga do caminhão: "))
+cod_carga = int(input("Digite o código da carga do caminhão (10 até 40): "))
 
 while cod_carga < 10 or cod_carga > 40:
   cod_carga = int(input("Digite um número inteiro compatível (10 até 40): "))
 
-print(f'\nCódigo do estado de origem da carga do caminhão: {cod_est}\nPeso da carga do caminhão em toneladas: {carga_peso}\nCódigo da carga do caminhão: {cod_carga}')
-
 kg_carga = carga_peso * 1000
+
+print(f'\nO peso da carga do caminhão em quilos é de: {kg_carga}')
 
 if 10 <= cod_carga < 21:
   preço_carga = kg_carga * 100.00
