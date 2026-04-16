@@ -9,3 +9,5 @@ João Marcelo de Melo e Silva Rm: 572569
 Pablo Renato dos Santos Sobral de Carvalho Rm: 569894
 
 Matheus Ruiz Rm: 569523
+
+Pedro Vianna Rm 570747
