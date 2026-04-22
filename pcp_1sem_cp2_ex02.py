@@ -14,13 +14,14 @@ print(f'\nOs valores dos lados do triângulo são: Lado A ={lado_a}, Lado b = {l
 
 if lado_a >= lado_b + lado_c:
   print(f'NÃO FORMA TRIÂNGULO')
-elif lado_a == lado_b == lado_c:
-  print(f'TRIÂNGULO EQUILÁTERO')
-elif lado_a == lado_b or lado_a == lado_c or lado_b == lado_c:
-  print(f'TRIÂNGULO ISÓSCELES')
-elif lado_a**2 == lado_b**2 + lado_c**2:
-  print(f'TRIÂNGULO RETÂNGULO')
-elif lado_a**2 > lado_b**2 + lado_c**2:
-  print(f'TRIÂNGULO OBTUSÂNGULO')
-elif lado_a**2 < lado_b**2 + lado_c**2:
-  print(f'TRIÂNGULO ACUTÂNGULO')
+else: 
+  if lado_a == lado_b == lado_c:
+    print(f'TRIÂNGULO EQUILÁTERO')
+  if lado_a == lado_b or lado_a == lado_c or lado_b == lado_c:
+    print(f'TRIÂNGULO ISÓSCELES')
+  if lado_a**2 == lado_b**2 + lado_c**2:
+    print(f'TRIÂNGULO RETÂNGULO')
+  if lado_a**2 > lado_b**2 + lado_c**2:
+    print(f'TRIÂNGULO OBTUSÂNGULO')
+  if lado_a**2 < lado_b**2 + lado_c**2:
+    print(f'TRIÂNGULO ACUTÂNGULO')
