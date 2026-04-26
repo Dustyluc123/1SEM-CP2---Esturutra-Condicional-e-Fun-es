@@ -6,10 +6,12 @@ cargos = ['1-Gerente',
        '4-Estagiário']
 
 cargo = input("Digite o cargo do funcionário: ")
+
 while cargo not in cargos:
   cargo = input("Cargo inválido. Digite novamente o número referente ao cargo e anomenclatura do cargo: ")
 
 salario_b = float(input("Digite o salário do funcionário: "))
+
 while salario_b <= 0:
   salario_b = float(input("Salário inválido. Digite novamente o salário do funcionário: "))
 
@@ -20,6 +22,7 @@ faltas = int(input("Digite a quantidade de faltas do funcionário: "))
 b = ['s',
      'n']
 bonus = (input("Digite se funcionário recebeu o bonus esse mês (s para sim, n para não): "))
+
 while bonus not in b:
   bonus = (input("Digite se funcionário recebeu o bonus esse mês (s para sim, n para não): "))
 
@@ -71,4 +74,4 @@ def calc_salario_final(salario_acrescimo, falta_final):
 
 salario_f = calc_salario_final(salario_a, flts)
 
-print(f'\nOlá {nome}!\nSeu cargo é refere a: {cargo}\nSeu salário bruto é de: {salario_b}\nTotal de acréscimos, em R$, é de: {extras}\nSeu desconto por falta foi de: {flts}\nO salario final é de: {salario_f}')
+print(f'\nOlá {nome}!\nSeu cargo é: {cargo}\nSeu salário bruto é de: {salario_b}\nTotal de acréscimos, em R$, é de: {extras}\nSeu desconto por falta foi de: {flts}\nO salario final é de: {salario_f}')
