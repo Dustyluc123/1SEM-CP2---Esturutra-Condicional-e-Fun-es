@@ -1,4 +1,3 @@
-
 cp1 = float(input("Digite a nota do primeiro Checkpoint: "))
 while cp1 > 10 or cp1 < 0:
   cp1 = float(input("Digite uma nota válida para o primeiro Checkpoint (Um número entre 0 e 10): "))
@@ -32,8 +31,8 @@ elif cp3 <= cp1 and cp3 <= cp2:
   cp_nota = cp3
 
 
-média_1 = (((cp1 + cp2 + cp3 - cp_nota + sp1 + sp2) / 4) *0.4) + gs * 0.6
-print(f'\nA Nota do aluno no primeiro Semestre é: {média_1:.1f}')
+media_1 = (((cp1 + cp2 + cp3 - cp_nota + sp1 + sp2) / 4) *0.4) + gs * 0.6
+print(f'\nA Nota do aluno no primeiro Semestre é: {media_1:.1f}')
 
-média_1_ps = média_1 * 0.4
-print(f'A Nota do aluno no primeiro Semestre com peso é: {média_1_ps:.1f}')
+media_ponderada = media_1 * 0.4
+print(f'A Nota do aluno no primeiro Semestre com peso é: {media_ponderada:.1f}')

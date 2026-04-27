@@ -1,5 +1,3 @@
-
-
 cod_est = int(input("Digite o código do estado de origem da carga do caminhão (1 até 5): "))
 
 while 1 > cod_est or cod_est > 5:
@@ -20,27 +18,27 @@ kg_carga = carga_peso * 1000
 print(f'\nO peso da carga do caminhão em quilos é de: {kg_carga}')
 
 if 10 <= cod_carga < 21:
-  preço_carga = kg_carga * 100.00
+  preco_carga = kg_carga * 100.00
 elif 21 <= cod_carga < 31:
-  preço_carga = kg_carga * 250.00
+  preco_carga = kg_carga * 250.00
 elif 31 <= cod_carga < 41:
-  preço_carga = kg_carga * 340.00
+  preco_carga = kg_carga * 340.00
 
-print(f'\nO preço da carga do caminhão é de: {preço_carga}')
+print(f'\nO preco da carga do caminhão é de: {preco_carga}')
 
 if cod_est == 1:
-  imp_carga = preço_carga * 0.35
+  imp_carga = preco_carga * 0.35
 elif cod_est == 2:
-  imp_carga = preço_carga * 0.25
+  imp_carga = preco_carga * 0.25
 elif cod_est == 3:
-  imp_carga = preço_carga * 0.15
+  imp_carga = preco_carga * 0.15
 elif cod_est == 4:
-  imp_carga = preço_carga * 0.05
-elif cod_est > 4:
-  imp_carga = preço_carga * 0.0
+  imp_carga = preco_carga * 0.05
+elif cod_est == 5:
+  imp_carga = preco_carga * 0.0
 
 print(f'\nO imposto pago pela carga do caminhão é de: {imp_carga}')
 
-valor_trsp = preço_carga + imp_carga
+valor_trsp = preco_carga + imp_carga
 
 print(f'\nO valor transportado pelo caminhão é de: {valor_trsp}')
